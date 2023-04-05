@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  IDorders: MyString
+  Description: MyString
+  Total: 1.5
+  Date: 2023-03-22
+
+two:
+  IDorders: MyString
+  Description: MyString
+  Total: 1.5
+  Date: 2023-03-22

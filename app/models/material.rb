@@ -1,2 +1,4 @@
 class Material < ApplicationRecord
-end
+  validates :name, presence: true 
+  validates_numericality_of :Quantity
+ end

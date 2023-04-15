@@ -12,12 +12,12 @@
 <% end %>
 
   <div class="mb-6">
-        <%= form.label :Name_Product, class: label_class %>
-          <%= form.text_field :Name_Product, class: input_class %>
+        <%= form.label :nameproduct, class: label_class %>
+          <%= form.text_field :nameproduct, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :Price, class: label_class %>
-          <%= form.text_field :Price, class: input_class %>
+        <%= form.label :price, class: label_class %>
+          <%= form.number_field :price, class: input_class %>
       </div>
 
 <%= form.submit class: button_class(theme: 'primary') %>

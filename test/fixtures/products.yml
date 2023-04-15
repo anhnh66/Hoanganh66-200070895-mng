@@ -1,9 +1,9 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  Name_Product: MyString
-  Price: 1.5
+  nameproduct: MyString
+  price: 1
 
 two:
-  Name_Product: MyString
-  Price: 1.5
+  nameproduct: MyString
+  price: 1

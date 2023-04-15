@@ -14,8 +14,8 @@ class ProductsTest < ApplicationSystemTestCase
     visit products_url
     click_on "New product"
 
-    fill_in "Name product", with: @product.Name_Product
-    fill_in "Price", with: @product.Price
+    fill_in "Nameproduct", with: @product.nameproduct
+    fill_in "Price", with: @product.price
     click_on "Create Product"
 
     assert_text "Product was successfully created"
@@ -26,8 +26,8 @@ class ProductsTest < ApplicationSystemTestCase
     visit product_url(@product)
     click_on "Edit this product", match: :first
 
-    fill_in "Name product", with: @product.Name_Product
-    fill_in "Price", with: @product.Price
+    fill_in "Nameproduct", with: @product.nameproduct
+    fill_in "Price", with: @product.price
     click_on "Update Product"
 
     assert_text "Product was successfully updated"

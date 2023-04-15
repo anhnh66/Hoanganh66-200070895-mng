@@ -14,8 +14,8 @@ class MaterialsTest < ApplicationSystemTestCase
     visit materials_url
     click_on "New material"
 
-    fill_in "Name", with: @material.Name
-    fill_in "Quantity", with: @material.Quantity
+    fill_in "Name", with: @material.name
+    fill_in "Quantity", with: @material.quantity
     click_on "Create Material"
 
     assert_text "Material was successfully created"
@@ -26,8 +26,8 @@ class MaterialsTest < ApplicationSystemTestCase
     visit material_url(@material)
     click_on "Edit this material", match: :first
 
-    fill_in "Name", with: @material.Name
-    fill_in "Quantity", with: @material.Quantity
+    fill_in "Name", with: @material.name
+    fill_in "Quantity", with: @material.quantity
     click_on "Update Material"
 
     assert_text "Material was successfully updated"

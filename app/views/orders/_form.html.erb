@@ -12,20 +12,20 @@
 <% end %>
 
   <div class="mb-6">
-        <%= form.label :IDorders, class: label_class %>
-          <%= form.text_field :IDorders, class: input_class %>
+        <%= form.label :idorder, class: label_class %>
+          <%= form.text_field :idorder, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :Description, class: label_class %>
-          <%= form.text_field :Description, class: input_class %>
+        <%= form.label :description, class: label_class %>
+          <%= form.text_field :description, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :Total, class: label_class %>
-          <%= form.text_field :Total, class: input_class %>
+        <%= form.label :totalprice, class: label_class %>
+          <%= form.number_field :totalprice, class: input_class %>
       </div>
   <div class="mb-6">
-        <%= form.label :Date, class: label_class %>
-          <%= form.date_field :Date, class: input_class %>
+        <%= form.label :date, class: label_class %>
+          <%= form.date_field :date, class: input_class %>
       </div>
 
 <%= form.submit class: button_class(theme: 'primary') %>

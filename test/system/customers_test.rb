@@ -14,9 +14,9 @@ class CustomersTest < ApplicationSystemTestCase
     visit customers_url
     click_on "New customer"
 
-    fill_in "Address", with: @customer.Address
-    fill_in "Customer name", with: @customer.Customer_Name
-    fill_in "Idorders", with: @customer.IDorders
+    fill_in "Address", with: @customer.address
+    fill_in "Idorder", with: @customer.idorder
+    fill_in "Name", with: @customer.name
     click_on "Create Customer"
 
     assert_text "Customer was successfully created"
@@ -27,9 +27,9 @@ class CustomersTest < ApplicationSystemTestCase
     visit customer_url(@customer)
     click_on "Edit this customer", match: :first
 
-    fill_in "Address", with: @customer.Address
-    fill_in "Customer name", with: @customer.Customer_Name
-    fill_in "Idorders", with: @customer.IDorders
+    fill_in "Address", with: @customer.address
+    fill_in "Idorder", with: @customer.idorder
+    fill_in "Name", with: @customer.name
     click_on "Update Customer"
 
     assert_text "Customer was successfully updated"

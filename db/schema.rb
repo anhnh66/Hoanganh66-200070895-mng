@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_22_033442) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_12_035754) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.string "name", null: false
     t.text "body"
@@ -49,16 +49,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_22_033442) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "books", force: :cascade do |t|
-    t.string "title"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "customers", force: :cascade do |t|
-    t.string "Customer_Name"
-    t.string "Address"
-    t.string "IDorders"
+    t.string "name"
+    t.integer "address"
+    t.string "idorder"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -75,24 +69,24 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_22_033442) do
   end
 
   create_table "materials", force: :cascade do |t|
-    t.string "Name"
-    t.float "Quantity"
+    t.string "name"
+    t.integer "quantity"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string "IDorders"
-    t.string "Description"
-    t.float "Total"
-    t.date "Date"
+    t.string "idorder"
+    t.string "description"
+    t.integer "totalprice"
+    t.date "date"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "products", force: :cascade do |t|
-    t.string "Name_Product"
-    t.float "Price"
+    t.string "nameproduct"
+    t.integer "price"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
